@@ -1,0 +1,75 @@
+.kutu1
+{
+    height: auto;
+    width: auto;
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.cc
+{
+    margin-left: 1180px;
+}
+
+@media screen and (max-width: 600px) {
+
+    .kutu1
+    {
+        width: 380px;
+        height: 1780px;   
+        position: relative;
+        margin-top: 50px;
+        margin-bottom: 10px;
+        margin-left: 50px;
+        
+    }
+    
+    .cc
+    {
+        margin-top: 5px;
+        margin-left: 250px;
+    }
+
+    table thead {
+      display: none;
+    }
+
+    table tr {
+        
+      margin-bottom: 10px;
+      display: block;
+      
+    }
+
+    table td {
+      display: block;
+      font-size: 13px;
+      
+    }
+
+    table td:last-child {
+      border-bottom: 0;
+    }
+    
+    .bb
+    {
+        margin-left: 30px;
+    }
+    
+    .aa
+    {
+        margin-left: 190px;
+        margin-top: -227px;
+    }
+    
+    .orta 
+    {
+        width: auto; 
+        height: 60px;
+    }
+}
+
+
