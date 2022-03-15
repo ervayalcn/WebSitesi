@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../../../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="tasar%C4%B1m.css">
+    <link rel="stylesheet" type="text/css" href="Bilet.css">
+    <title>MOVİE PARADISE</title>
+    
+    <!--Template based on URL below-->
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/starter-template/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Place your stylesheet here-->
+    <link href="tasarim.css" rel="stylesheet" type="text/css">
+    <link href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+
+</head>
+    
+<body style="background-color: #333">
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+    
+    <a class="navbar-brand" href="Anasayfa1.html"><img src="Resimler/logo2.png" alt="logo" class="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-1 ml-auto">
+            <li class="nav-item">
+                <a class="nav-link akla navbar-boyut" href="Anasayfa1.html">Anasayfa</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle akla navbar-boyut" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Sıralama</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown01">
+                    <a class="dropdown-item" href="beg1.html">En Beğenilenler</a>
+                    <a class="dropdown-item" href="izle1.html">En Çok İzlenenler</a>
+                    <a class="dropdown-item" href="imdb1.html">Imdb Top</a>
+                    <a class="dropdown-item" href="tarih1.html">Çıkış Tarihi</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link akla navbar-boyut" href="Biletal.html">Bilet</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link akla navbar-boyut" href="giris.html">Üyelik</a>
+            </li>
+        </ul>
+        <form style="margin-top: 15px">
+<p>
+<input type="arama" placeholder="Arama">
+</p>
+</form>
+        
+    </div>
+</nav>
+    
+    <section class="kutu bg-dark">
+        <div class="blt-row-filmler">
+        <div class="row">
+        <div class="col-md-3 col-sm-3">
+      <a href="#biletalmagenel"><img src="Resimler/yzk-kar.jpg" class="blt-pht img-thumbnail phtglg" style="background-color: #696868;
+    border: 1px solid #696868;" onclick="birincifilm()"></a>
+    </div>
+        <div class="col-md-3 col-sm-3">
+      <a href="#biletalmagenel"><img src="Resimler/eseratin%20bedeli%201.jpg" class="blt-pht img-thumbnail phtglg" style="background-color: #696868;
+    border: 1px solid #696868;" onclick="ikincifilm()"></a>
+    </div>
+        <div class="col-md-3 col-sm-3">
+      <a href="#biletalmagenel"><img src="Resimler/2.jpg" class="blt-pht img-thumbnail phtglg" style="background-color: #696868;
+    border: 1px solid #696868;" onclick="ucuncufilm()"></a>
+    </div>
+        <div class="col-md-3 col-sm-3">
+      <a href="#biletalmagenel"><img src="Resimler/9.jpg" class="blt-pht img-thumbnail phtglg" style="background-color: #696868;
+    border: 1px solid #696868;" onclick="dorduncufilm()"></a>
+    </div>
+    </div>
+    </div>
+        <br>
+        <div class="blt-alm" id="biletalmagenel">
+        <div class="container blt-ekr">
+            <div class="row">
+            <div class="col-md-3 col-sm-3">
+                <img id="biletfilmresim" src="Resimler/Bo%C5%9F.jpg" class="blt-pht img-thumbnail phtglg" style="background-color: #434343;
+    border: 1px solid #434343;">
+                <a id="flmtntm" href="#" class="btn btn-primary golge text-light active" role="button" aria-pressed="true" style="background: #a964d4;margin-top: 10px;text-align: center;"><b>Film Tanıtımı</b></a>
+            </div>
+            <div class="col-md-9 col-sm-9" style="margin-top: 30px">
+            <form class="form-horizontal" action="/action_page.php" >
+                <div class="form-group">
+      <label class="control-label col-sm-4">Şehir</label>
+      <div class="col-sm-5">
+        <select class="form-control" id="sehir">
+        <option disabled selected value="">Şehir Seçin</option>
+        <option value="Adana">Adana</option>
+        <option value="Ankara">Ankara</option>
+        <option value="Balıkesir">Balıkesir</option>
+        <option value="Edirne">Edirne</option>
+        <option value="İstanbul">İstanbul</option>
+        <option value="Samsun">Samsun</option>
+        <option value="Sivas">Sivas</option>
+        <option value="Trabzon">Trabzon</option>
+        <option value="Zonguldak">Zonguldak</option>
+      </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4">Salon</label>
+      <div class="col-sm-5">
+        <select class="form-control" id="salon">
+        <option disabled selected value="">Salon Seçin</option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+      </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4">Saat</label>
+      <div class="col-sm-5">
+        <select class="form-control" id="saat">
+        <option disabled selected value="">Saat Seçin</option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>
+        <option value=""></option>    
+      </select>
+      </div>
+    </div>
+                <div class="form-group">
+      <label class="control-label col-sm-4">Bilet Tipi</label>
+      <div class="col-sm-5">
+        <select class="form-control" id="saat">
+        <option disabled selected value="">Bilet Tipi Seç</option>
+        <option value="1">Öğrenci 17₺</option>
+        <option value="2">Normal 20₺</option> 
+      </select>
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4">Koltuk No</label>
+        <div class="row" >
+            
+      <div class="col-sm-10">
+          
+          <div class="row">
+          
+          <div class="resimKapsayici" style="margin-left: 30px">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="1A" onclick="DB1()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="2A" onclick="DB2()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="3A" onclick="DB3()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="4A" onclick="DB4()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="5A" onclick="DB5()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="6A" onclick="DB6()">
+</div>
+              <div class="resimKapsayici">
+<p class="resimYazisi">A</p>
+</div>
+              
+              </div>
+          
+          <div class="row">
+          
+          <div class="resimKapsayici" style="margin-left: 30px">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="1B" onclick="DB7()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="2B" onclick="DB8()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="3B" onclick="DB9()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="4B" onclick="DB10()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="5B" onclick="DB11()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="6B" onclick="DB12()">
+</div>
+               <div class="resimKapsayici">
+<p class="resimYazisi">B</p>
+</div>
+              </div>
+          
+          <div class="row">
+          
+          <div class="resimKapsayici" style="margin-left: 30px">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="1C" onclick="DB13()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="2C" onclick="DB14()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="3C" onclick="DB15()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="4C" onclick="DB16()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="5C" onclick="DB17()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="6C" onclick="DB18()">
+</div>
+              <div class="resimKapsayici">
+<p class="resimYazisi">C</p>
+</div>
+              
+              </div>
+          
+          <div class="row">
+          
+          <div class="resimKapsayici" style="margin-left: 30px">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="1D" onclick="DB19()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="2D" onclick="DB20()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="3D" onclick="DB21()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="4D" onclick="DB22()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="5D" onclick="DB23()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="6D" onclick="DB24()">
+</div>
+              <div class="resimKapsayici">
+<p class="resimYazisi">D</p>
+</div>
+              </div>
+          
+          <div class="row">
+          
+          <div class="resimKapsayici" style="margin-left: 30px">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="1E" onclick="DB25()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="2E" onclick="DB26()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="3E" onclick="DB27()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="4E" onclick="DB28()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="5E" onclick="DB29()">
+</div>
+              <div class="resimKapsayici">
+<img src="Resimler/bkoltuk.png" width="25px" height="25px" id="6E" onclick="DB30()">
+</div>
+              <div class="resimKapsayici">
+<p class="resimYazisi">E</p>
+</div>
+              </div>
+          <div class="row">
+          
+          <div class="resimKapsayici" style="margin-left: 35px">
+<p class="resimYazisi">1</p>
+</div>
+              <div class="resimKapsayici" style="margin-left: 28px">
+<p class="resimYazisi">2</p>
+</div>
+              <div class="resimKapsayici" style="margin-left: 27px">
+<p class="resimYazisi">3</p>
+</div>
+              <div class="resimKapsayici" style="margin-left: 29px">
+<p class="resimYazisi">4</p>
+</div>
+              <div class="resimKapsayici" style="margin-left: 27px">
+<p class="resimYazisi">5</p>
+</div>
+              <div class="resimKapsayici" style="margin-left: 28px">
+<p class="resimYazisi">6</p>
+</div>
+              </div>
+          
+ 
+        </div>
+            </div>
+    </div>
+                <br>
+    <div class="form-group">
+      <label class="control-label col-sm-4">Kart No</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" value="" id="crdno" placeholder="Kart Numaranızı Girin" name="cardno" maxlength="16">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4">VALID THRU</label>
+      <div class="col-sm-5">          
+        <input class="form-control" type="month" value="2021-01" id="sn-trh">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-4">CVC2 No</label>
+      <div class="col-sm-5">          
+        <input type="text" class="form-control" id="cvc2" value="" placeholder="cvc2 No" name="cvc2" maxlength="3">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox" name="remember" required><a href="#" style="color: white">Sözleşmeleri okudum ve kabul ediyorum.</a></label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="button" class="btn text-light golge" style="background: #a964d4;" onclick="btnkontrol()"><b>BİLETİ AL</b></button>
+      </div>
+    </div>
+  </form>
+        </div>
+    </div>
+ </div>
+</div>
+ <br>
+            
+        
+        
+    </section>
+    
+    <footer class="bg-dark expand-md bg">
+        <div class="container">
+            <div class="row">
+            <div class=" mb-2 mt-2 col-12 col-md-4">
+                <img src="Resimler/logo2.png" class="logo1 ">
+            </div>
+            <div class="text-secondary mt-4 col-12 col-md-4" style="display: inline-block">
+                <small>Copyright©️ 2021 Tüm Hakları Saklıdır.</small>
+                <br>
+                
+                <div class="mt-2 ikn">
+                <a href="#"><img class="ikon" src="Resimler/instagram.png"></a>
+                <a href="#"><img class="ikon" src="Resimler/facebook.png"></a>
+                <a href="#"><img class="ikon" src="Resimler/twitter.png"></a>
+                </div>
+            </div>
+            <div class="mb-3 mt-3 col-12 col-md-4">
+                <ul class="text-secondary list-unstyled mb-2">
+                    <li><a href="#" class="text-muted">Hakkımızda</a></li>
+                    <li><a href="#" class="text-muted">Bize Ulaşın</a></li>
+                    <li><a href="#" class="text-muted">Gizlilik</a></li>
+                </ul>
+            </div>
+            <div style="clear: left"></div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function birincifilm(){
+        var image = document.getElementById("biletfilmresim");
+        image.src = "Resimler/yzk-kar.jpg";
+            var deger1=document.getElementById('saat').options[1];
+            var deger2=document.getElementById('saat').options[2];
+            var deger3=document.getElementById('saat').options[3];
+            var deger4=document.getElementById('saat').options[4];
+            deger1.text = '10:30';
+            deger2.text = '14:15';
+            deger3.text = '17:00';
+            deger4.text = '20:45';
+            deger1.value = "1";
+            deger2.value = "2";
+            deger3.value = "3";
+            deger4.value = "4";
+            var salon1=document.getElementById('salon').options[1];
+            var salon2=document.getElementById('salon').options[2];
+            var salon3=document.getElementById('salon').options[3];
+            var salon4=document.getElementById('salon').options[4];
+            salon1.text = 'Salon1 | 2D | Türkçe Dublaj';
+            salon2.text = 'Salon3 | 2D | Türkçe Altyazılı';
+            salon3.text = 'Salon4 | 3D | Türkçe Dublaj';
+            salon4.text = 'Salon7 | 3D | Türkçe Altyazılı';
+            salon1.value ="1";
+            salon2.value ="2";
+            salon3.value ="3";
+            salon4.value ="4";
+            var tntmbtn =document.getElementById("flmtntm");
+            tntmbtn.href = "11.html";
+            }
+        function ikincifilm(){
+        var image = document.getElementById("biletfilmresim");
+        image.src = "Resimler/eseratin%20bedeli%201.jpg";
+            var deger1=document.getElementById('saat').options[1];
+            var deger2=document.getElementById('saat').options[2];
+            var deger3=document.getElementById('saat').options[3];
+            var deger4=document.getElementById('saat').options[4];
+            deger1.text = '09:15';
+            deger2.text = '13:45';
+            deger3.text = '16:30';
+            deger4.text = '21:00';
+            deger1.value = "1";
+            deger2.value = "2";
+            deger3.value = "3";
+            deger4.value = "4";
+            var salon1=document.getElementById('salon').options[1];
+            var salon2=document.getElementById('salon').options[2];
+            var salon3=document.getElementById('salon').options[3];
+            var salon4=document.getElementById('salon').options[4];
+            salon1.text = 'Salon3 | 2D | Türkçe Dublaj';
+            salon2.text = 'Salon5 | 2D | Türkçe Altyazılı';
+            salon3.text = 'Salon11 | 3D | Türkçe Dublaj';
+            salon4.text = 'Salon12 | 3D | Türkçe Altyazılı';
+            salon1.value ="1";
+            salon2.value ="2";
+            salon3.value ="3";
+            salon4.value ="4";
+            var tntmbtn =document.getElementById("flmtntm");
+            tntmbtn.href = "1.html";
+            }
+        function ucuncufilm(){
+        var image = document.getElementById("biletfilmresim");
+        image.src = "Resimler/2.jpg";
+            var deger1=document.getElementById('saat').options[1];
+            var deger2=document.getElementById('saat').options[2];
+            var deger3=document.getElementById('saat').options[3];
+            var deger4=document.getElementById('saat').options[4];
+            deger1.text = '12:45';
+            deger2.text = '16:15';
+            deger3.text = '18:00';
+            deger4.text = '20:00';
+            deger1.value = "1";
+            deger2.value = "2";
+            deger3.value = "3";
+            deger4.value = "4";
+            var salon1=document.getElementById('salon').options[1];
+            var salon2=document.getElementById('salon').options[2];
+            var salon3=document.getElementById('salon').options[3];
+            var salon4=document.getElementById('salon').options[4];
+            salon1.text = 'Salon2 | 2D | Türkçe Dublaj';
+            salon2.text = 'Salon4 | 2D | Türkçe Altyazılı';
+            salon3.text = 'Salon6 | 2D | Türkçe Dublaj';
+            salon4.text = 'Salon9 | 2D | Türkçe Altyazılı';
+            salon1.value ="1";
+            salon2.value ="2";
+            salon3.value ="3";
+            salon4.value ="4";
+            var tntmbtn =document.getElementById("flmtntm");
+            tntmbtn.href = "2.html";
+            }
+        function dorduncufilm(){
+        var image = document.getElementById("biletfilmresim");
+        image.src = "Resimler/9.jpg";
+            var deger1=document.getElementById('saat').options[1];
+            var deger2=document.getElementById('saat').options[2];
+            var deger3=document.getElementById('saat').options[3];
+            var deger4=document.getElementById('saat').options[4];
+            deger1.text = '11:30';
+            deger2.text = '13:45';
+            deger3.text = '19:15';
+            deger4.text = '21:45';
+            deger1.value = "1";
+            deger2.value = "2";
+            deger3.value = "3";
+            deger4.value = "4";
+            var salon1=document.getElementById('salon').options[1];
+            var salon2=document.getElementById('salon').options[2];
+            var salon3=document.getElementById('salon').options[3];
+            var salon4=document.getElementById('salon').options[4];
+            salon1.text = 'Salon4 | 2D | Türkçe Dublaj';
+            salon2.text = 'Salon5 | 2D | Türkçe Altyazılı';
+            salon3.text = 'Salon8 | 2D | Türkçe Dublaj';
+            salon4.text = 'Salon10 | 2D | Türkçe Altyazılı';
+            salon1.value ="1";
+            salon2.value ="2";
+            salon3.value ="3";
+            salon4.value ="4";
+            var tntmbtn =document.getElementById("flmtntm");
+            tntmbtn.href = "9.html";
+            }
+        function btnkontrol(){
+            var salon = document.getElementById("salon");
+            var saat = document.getElementById("saat");
+            var cardno = document.getElementById("crdno");
+            var cvc2 = document.getElementById("cvc2");
+            var koltuk = document.getElementById("sel2");
+            if(sehir.value !=""){
+               if(salon.value != ""){
+                if(saat.value != ""){
+                    if(cardno.value.length == 16){
+                        if(cvc2.value.length == 3){
+                               return true; 
+                           }
+                           else{alert("Cvc2 Kodunu Dogru ve Eksiksiz Girin");
+                               return false;}
+                       }
+                    else{alert("Kart Numaranızı Doğru ve Eksiksiz Girin");
+                        return false;}
+                    
+                   }
+                else{alert("Saat Seçin");
+                    return false;}
+               }
+            else{alert("Salon Seçin");
+                return false;}  
+            }
+          else{alert("Şehir Seçin")
+              return false;}
+            
+        }
+        
+        function DB1()
+        {
+            var rsm = document.getElementById("1A");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+        function DB2()
+        {
+             var rsm = document.getElementById("2A");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB3()
+        {
+             var rsm = document.getElementById("3A");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB4()
+        {
+             var rsm = document.getElementById("4A");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB5()
+        {
+             var rsm = document.getElementById("5A");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB6()
+        {
+             var rsm = document.getElementById("6A");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB7()
+        {
+             var rsm = document.getElementById("1B");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB8()
+        {
+             var rsm = document.getElementById("2B");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB9()
+        {
+             var rsm = document.getElementById("3B");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB10()
+        {
+             var rsm = document.getElementById("4B");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB11()
+        {
+             var rsm = document.getElementById("5B");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB12()
+        {
+             var rsm = document.getElementById("6B");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB13()
+        {
+             var rsm = document.getElementById("1C");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB14()
+        {
+             var rsm = document.getElementById("2C");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB15()
+        {
+             var rsm = document.getElementById("3C");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB16()
+        {
+             var rsm = document.getElementById("4C");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB17()
+        {
+             var rsm = document.getElementById("5C");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB18()
+        {
+             var rsm = document.getElementById("6C");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB19()
+        {
+             var rsm = document.getElementById("1D");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB20()
+        {
+             var rsm = document.getElementById("2D");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB21()
+        {
+             var rsm = document.getElementById("3D");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB22()
+        {
+             var rsm = document.getElementById("4D");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB23()
+        {
+             var rsm = document.getElementById("5D");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB24()
+        {
+             var rsm = document.getElementById("6D");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB25()
+        {
+             var rsm = document.getElementById("1E");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB26()
+        {
+             var rsm = document.getElementById("2E");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB27()
+        {
+             var rsm = document.getElementById("3E");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB28()
+        {
+             var rsm = document.getElementById("4E");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB29()
+        {
+             var rsm = document.getElementById("5E");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+         function DB30()
+        {
+             var rsm = document.getElementById("6E");
+            if(rsm.src.match("dkol"))
+                {  rsm.src="Resimler/bkoltuk.png";}
+            else{ rsm.src="Resimler/dkoltuk.png";}  
+        }
+    </script>
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
